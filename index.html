@@ -48,28 +48,34 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="text-[20px] lg:text-[36px] font-extrabold">P-Ticket</a>
+            <a class="text-[20px] lg:text-[36px] text-gray-900 font-bold"
+              >P-Ticket</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul
               class="menu menu-horizontal px-1 text-[18px] text-gray-900 font-medium"
             >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#home">Destination</a></li>
+              <li><a href="#home">Search</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <button class="btn flex items-center space-x-2 btn-bg">
-              <span class="text-xl lg:text-[20px] text-[#1DD100]">Bus</span>
-              <img src="images/bus-icon.png" alt="Image" />
-            </button>
+            <a href="#bus">
+              <button
+                class="btn bg-green-300 border-none text-white flex items-center space-x-2 btn-bg"
+              >
+                <span class="text-xl lg:text-[20px] text-white">Bus</span>
+                <img src="images/bus-icon.png" alt="Image" />
+              </button>
+            </a>
           </div>
         </div>
       </nav>
       <!-- Banner Section -->
-      <section>
+      <section id="home">
         <div
           class="hero min-h-[550px] rounded-lg bg-cover bg-center bg-no-repeat"
           style="background-image: url('images/banner.png')"
@@ -78,7 +84,7 @@
           <div class="hero-content text-center text-neutral-content">
             <div class="">
               <h1
-                class="mb-5 text-gray-900 text-[40px] lg:text-[64px] font-bold"
+                class="mb-5 text-white text-[40px] lg:text-[56px] font-semibold"
               >
                 End-to-End Travel with <br />
                 <span class="text-[#1DD100]">P Paribahan</span>
@@ -91,7 +97,7 @@
                 The integrated testing features allow for a streamlined ..
               </p>
               <button
-                class="btn bg-[#1DD100] text-[17px] mb-10 lg:text-[20px] font-bold border-none"
+                class="btn bg-[#1DD100] text-white border-none ext-[17px] mb-10 lg:text-[20px] font-bold border-none"
               >
                 Buy Tickets
               </button>
@@ -101,8 +107,10 @@
       </section>
     </header>
     <!-- Ticket Views -->
-    <section class="mt-10 my-10 lg:-mt-16 mb-10">
-      <div class="flex justify-center items-center flex-col lg:flex-row gap-10">
+    <section class="mt-10 my-10 lg:-mt-16 mb-10" id="about">
+      <div
+        class="flex justify-center text-gray-900 items-center flex-col lg:flex-row gap-10"
+      >
         <div
           class="rounded-[25px] border-b-4 px-6 py-2 border-b-green-500 bg-[#FFFFFF] shadow-lg"
         >
@@ -112,7 +120,7 @@
             </div>
             <div class="p-2">
               <h2 class="text-[36px] font-bold">500K+</h2>
-              <p class="text-[18px] text-gray-400">Registered users</p>
+              <p class="text-[18px] text-gray-800">Registered users</p>
             </div>
           </div>
         </div>
@@ -126,7 +134,7 @@
             </div>
             <div class="p-2">
               <h2 class="text-[36px] font-bold">1.7lacks</h2>
-              <p class="text-[18px] text-gray-400">Tickets sold</p>
+              <p class="text-[18px] text-gray-800">Tickets sold</p>
             </div>
           </div>
         </div>
@@ -140,85 +148,79 @@
             </div>
             <div class="p-2">
               <h2 class="text-[36px] font-bold">8K+</h2>
-              <p class="text-[18px] text-gray-400">Rental partners</p>
+              <p class="text-[18px] text-gray-800">Rental partners</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Coupon Area Desing -->
-    <section class="my-20">
-      <h2 class="text-[30px] lg:text-[40px] font-bold text-center mb-8">
+    <section class="my-20 container mx-auto px-4">
+      <h2
+        class="text-[30px] text-gray-900 lg:text-[40px] font-bold text-center mb-8"
+      >
         Best offers for you
       </h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="flex card rounded-3xl bg-amber-400">
-          <div class="text-gray-900 lg:absolute">
-            <div class="p-[52px]">
-              <div class="flex flex-col lg:flex-row gap-10">
-                <div class="">
-                  <h2
-                    class="card-title text-[#030712cc] font-[inter] text-[40px] font-black"
-                  >
-                    15% OFF
-                  </h2>
-                  <h3 class="text-[#030712cc] font-bold text-[17px] my-4">
-                    on your next purchase
-                  </h3>
-                  <p class="text-[#03071280] font-medium text-lg">
-                    use by January 2024
-                  </p>
-                </div>
-                <div class="">
-                  <h2
-                    class="font-[raleway] text-[#030712cc] text-[40px] font-semibold"
-                  >
-                    NEW15
-                  </h2>
-                  <p class="text-[#03071280] font-medium text-lg">
-                    Coupon Code
-                  </p>
-                </div>
+          <div class="text-gray-900">
+            <div class="flex flex-col lg:flex-row gap-10">
+              <div class="p-10">
+                <h2
+                  class="card-title text-[#030712cc] font-[inter] text-[40px] font-black"
+                >
+                  15% OFF
+                </h2>
+                <h3 class="text-[#030712cc] font-bold text-[17px] my-4">
+                  on your next purchase
+                </h3>
+                <p class="text-[#03071280] font-medium text-lg">
+                  use by January 2024
+                </p>
+              </div>
+              <div class="hidden lg:block">
+                <img src="images/cupon-devider.png" alt="" />
+              </div>
+              <div class="p-10">
+                <h2
+                  class="font-[raleway] text-[#030712cc] text-[40px] font-semibold"
+                >
+                  new15
+                </h2>
+                <p class="text-[#03071280] font-medium text-lg">Coupon Code</p>
               </div>
             </div>
-          </div>
-          <div class="hidden lg:block lg:relative">
-            <img src="images/cupon-devider.png" alt="" />
           </div>
         </div>
 
         <div class="flex card rounded-3xl bg-[rgb(247,140,156)]">
-          <div class="text-primary-content lg:absolute">
-            <div class="p-[52px]">
-              <div class="flex flex-col lg:flex-row lg:justify-between gap-10">
-                <div class="">
-                  <h2
-                    class="card-title text-[#030712cc] font-[inter] text-[40px] font-black"
-                  >
-                    20% OFF
-                  </h2>
-                  <h3 class="text-[#030712cc] font-bold text-[17px] my-4">
-                    on your next purchase
-                  </h3>
-                  <p class="text-[#03071280] font-medium text-lg">
-                    use by January 2024
-                  </p>
-                </div>
-                <div class="">
-                  <h2
-                    class="font-[raleway] text-[#030712cc] text-[28px] font-semibold"
-                  >
-                    Couple 20
-                  </h2>
-                  <p class="text-[#03071280] font-medium text-lg">
-                    Coupon Code
-                  </p>
-                </div>
+          <div class="text-gray-900">
+            <div class="flex flex-col lg:flex-row gap-10">
+              <div class="p-10">
+                <h2
+                  class="card-title text-[#030712cc] font-[inter] text-[40px] font-black"
+                >
+                  20% OFF
+                </h2>
+                <h3 class="text-[#030712cc] font-bold text-[17px] my-4">
+                  on your next purchase
+                </h3>
+                <p class="text-[#03071280] font-medium text-lg">
+                  use by January 2024
+                </p>
+              </div>
+              <div class="hidden lg:block">
+                <img src="images/cupon-devider.png" alt="" />
+              </div>
+              <div class="p-10">
+                <h2
+                  class="font-[raleway] text-[#030712cc] text-[28px] font-semibold"
+                >
+                  couple20
+                </h2>
+                <p class="text-[#03071280] font-medium text-lg">Coupon Code</p>
               </div>
             </div>
-          </div>
-          <div class="hidden lg:block relative">
-            <img src="images/cupon-devider.png" alt="" />
           </div>
         </div>
       </div>
@@ -238,8 +240,8 @@
         <div
           class="flex justify-center items-center flex-col space-y-3 text-center"
         >
-          <h2 class="font-bold text-[40px]">P.H Paribahan</h2>
-          <p class="text-[18px] text-gray-400">
+          <h2 class="font-bold text-gray-900 text-[40px]">P.H Paribahan</h2>
+          <p class="text-[18px] text-gray-800">
             Yes, you can run unit tests and view the results directly within the
             app. The integrated <br />
             testing features allow for a streamlined .
@@ -258,7 +260,9 @@
                     <img src="images/bus-logo.png" alt="bus logo" />
                   </div>
                   <div class="p-3">
-                    <h3 class="text-[32px] font-bold">Greenline Paribahan</h3>
+                    <h3 class="text-[32px] text-gray-900 font-bold">
+                      Greenline Paribahan
+                    </h3>
                     <p>Coach-009-WEB ! AC_Business</p>
                   </div>
                 </div>
@@ -353,7 +357,10 @@
             </div>
 
             <!-- seat start -->
-            <div class="font-medium bg-white text-2xl text-black opacity-50">
+            <div
+              class="font-medium bg-white text-2xl text-black opacity-50"
+              id="bus"
+            >
               <div
                 class="flex flex-col lg:flex-row lg:justify-center gap-10 my-1 lg:w-full"
               >
